@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019.
+  ~ Created by Vladislav Zraevskij
+  ~
+  ~ This file is part of XReader.
+  ~
+  ~     XReader is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU Lesser General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     XReader is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU Lesser General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU Lesser General Public License
+  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
+  ~
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	
+	tools:context=".ui.activity.ConverterActivity">
+	
+	<RelativeLayout
+		android:id="@+id/converter_source_file_relativeLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+		
+		<ImageView
+			android:id="@+id/converter_source_imageView"
+			android:layout_width="160dp"
+			android:layout_height="160dp"
+			android:src="@drawable/ic_file_outline" />
+		
+		<TextView
+			android:id="@+id/converter_source_textView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@id/converter_source_imageView"
+			android:layout_alignTop="@id/converter_source_imageView"
+			android:layout_alignRight="@id/converter_source_imageView"
+			android:layout_alignBottom="@id/converter_source_imageView"
+			android:layout_marginStart="1dp"
+			android:layout_marginTop="1dp"
+			android:layout_marginEnd="1dp"
+			android:layout_marginBottom="1dp"
+			android:gravity="center"
+			android:textColor="@android:color/black"
+			android:textSize="40sp"
+			android:textStyle="bold" />
+	
+	</RelativeLayout>
+	
+	<TextView
+		android:id="@+id/converter_file_to_convert_full_name_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@android:color/black"
+		android:textSize="22sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/converter_convert_to_textview"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/converter_source_file_relativeLayout"
+		tools:text="TempContent0.html" />
+	
+	<TextView
+		android:id="@+id/converter_convert_to_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/convert_to"
+		android:textColor="@android:color/black"
+		android:textSize="22sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/converter_extension_textView"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/converter_file_to_convert_full_name_textview" />
+	
+	<TextView
+		android:id="@+id/converter_extension_textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="12dp"
+		android:text="@string/convert_to_document_extension"
+		android:textColor="@android:color/black"
+		android:textSize="22sp"
+		app:layout_constraintBottom_toTopOf="@+id/button"
+		app:layout_constraintEnd_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toBottomOf="@+id/converter_convert_to_textview" />
+	
+	<Spinner
+		android:id="@+id/converter_extension_spinner"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="12dp"
+		android:entries="@array/document_conversions"
+		app:layout_constraintBottom_toBottomOf="@+id/converter_extension_textView"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toTopOf="@+id/converter_extension_textView" />
+	
+	<com.dd.processbutton.iml.ActionProcessButton
+		android:id="@+id/button"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:text="@string/converter_convert"
+		android:textAppearance="@style/TextAppearance.AppCompat.Large"
+		android:textColor="@android:color/white"
+		android:textSize="22sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/converter_extension_textView"
+		app:pb_colorComplete="@color/green_complete"
+		app:pb_colorError="@color/red_error"
+		app:pb_colorNormal="@color/blue_normal"
+		app:pb_colorPressed="@color/blue_pressed"
+		app:pb_colorProgress="@color/purple_progress" />
+	
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintGuide_percent="0.50121653"
+		app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

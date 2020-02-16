@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019.
+  ~ Created by Vladislav Zraevskij
+  ~
+  ~ This file is part of XReader.
+  ~
+  ~     XReader is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU Lesser General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     XReader is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU Lesser General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU Lesser General Public License
+  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
+  ~
+  -->
+
+<resources>
+	<string name="app_name">XReader</string>
+	<string name="add_bookmark_button">Добавить</string>
+	<string name="add_bookmark">Добавить закладку</string>
+	<string name="menu_bookmark_added">Закладка добавлена!</string>
+	<string name="bookmark_page_index">Страница %1$d</string>
+	<string name="chapter_page">Глава: %1$d, Страница: %2$d.</string>
+	<string name="choose_bookmark">Выберите закладку</string>
+	<string name="choose_font_size">Выберите размер шрифта</string>
+	<string name="converter_convert">Конвертировать</string>
+	<string name="converter_uploading">Отправка…</string>
+	<string name="converter_success">Успешно!</string>
+	<string name="converter_internet_is_unavailable">Интернет соединение недоступно</string>
+	<string name="converter_failure">Неудачно :(</string>
+	<string name="converter_downloading">Загрузка…</string>
+	<string name="converter_converting">Конвертация</string>
+	<string name="dialog_button_go">Перейти</string>
+	<string name="dialog_go_to">Открыть страницу %1$d</string>
+	<string name="dialog_go_to_title">Выберите страницу</string>
+	<string name="dismiss">Закрыть</string>
+	<string name="elements">Файлов: %1$d</string>
+	<string name="folder_name_menu_item">Имя папки</string>
+	<string name="menu_add_to_favorites">Добавить в избранное</string>
+	<string name="menu_allow_rotations">Разрешить повороты</string>
+	<string name="menu_bookmark">Добавить закладку</string>
+	<string name="menu_convert">Конвертировать</string>
+	<string name="menu_explorer_search">Поиск</string>
+	<string name="menu_explorer_sort">Сортировать</string>
+	<string name="menu_explorer_sort_by_date">По дате</string>
+	<string name="menu_explorer_sort_by_extension">По расширению</string>
+	<string name="menu_explorer_sort_by_name">По имени</string>
+	<string name="menu_explorer_sort_by_size">По размеру</string>
+	<string name="menu_forbid_rotations">Запретить повороты</string>
+	<string name="menu_go_to">Перейти к…</string>
+	<string name="menu_intent_send_file_title">Поделиться через…</string>
+	<string name="menu_night_mode">Ночной режим</string>
+	<string name="menu_share">Поделиться</string>
+	<string name="menu_text_size">Размер шрифта</string>
+	<string name="menu_toc">Оглавление</string>
+	<string name="range_seek_bar_name">Размер файла</string>
+	<string name="search_menu_item_name">Поиск</string>
+	<string name="selected_font_size_parameterized">Размер шрифта %1$d</string>
+	<string name="sort_by_menu_item">Сортировать по</string>
+	<string name="sorting_view_title">Сортировать по</string>
+	<string name="tab_name_bookmarks">Закладки</string>
+	<string name="tab_name_explorer">Проводник</string>
+	<string name="tab_name_recent_files">Недавние</string>
+	<string name="table_of_contents">Оглавление</string>
+	<string name="table_of_contents_is_null">Нет оглавления</string>
+	<string name="confirm_delete_title">Вы действительно хотите удалить закладку?</string>
+	<string name="delete_button">Удалить</string>
+	<string name="bookmark">Закладка</string>
+	<string name="bookmark_deleted">Закладка удалена!</string>
+	<string name="dialog_bookmark_added">Закладка удалена!</string>
+	<string name="explorer_title">Проводник</string>
+	<string name="internal_storage">Внутреннее хранилище</string>
+	<string name="could_not_open_error_dialog_title">Не удалось открыть файл</string>
+	<string name="converter_file_size_warning_title">Внимание</string>
+	<string name="converter_file_size_warning_text">Для конвертации необходимо интернет соединение.
+		Размер передаваемого файла — %1$s.
+		Вы уверены, что хотите начать конвертацию?</string>
+	<string name="dialog_sheets_title">Листы</string>
+	<string name="no_bookmarks">Нет закладок</string>
+	<string name="no_recents">Нет недавних файлов</string>
+	<string name="convert_to">Конвертировать в:</string>
+	<string name="convert_to_document_type">Тип документа</string>
+	<string name="convert_to_document_extension">Расширение:</string>
+</resources>

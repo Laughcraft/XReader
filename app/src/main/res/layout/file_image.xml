@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019.
+  ~ Created by Vladislav Zraevskij
+  ~
+  ~ This file is part of XReader.
+  ~
+  ~     XReader is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU Lesser General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     XReader is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU Lesser General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU Lesser General Public License
+  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
+  ~
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/converter_source_file_relativeLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<ImageView
+		android:id="@+id/converter_source_imageView"
+		android:layout_width="52dp"
+		android:layout_height="52dp"
+		android:src="@drawable/ic_file_outline" />
+	
+	<TextView
+		android:id="@+id/converter_source_textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@id/converter_source_imageView"
+		android:layout_alignTop="@id/converter_source_imageView"
+		android:layout_alignRight="@id/converter_source_imageView"
+		android:layout_alignBottom="@id/converter_source_imageView"
+		android:layout_marginStart="1dp"
+		android:layout_marginTop="1dp"
+		android:layout_marginEnd="1dp"
+		android:layout_marginBottom="1dp"
+		android:gravity="center"
+		android:text="txt"
+		android:textColor="@android:color/black"
+		android:textSize="12sp"
+		android:textStyle="bold" />
+
+</RelativeLayout>

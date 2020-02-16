@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019.
+  ~ Created by Vladislav Zraevskij
+  ~
+  ~ This file is part of XReader.
+  ~
+  ~     XReader is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU Lesser General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     XReader is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU Lesser General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU Lesser General Public License
+  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
+  ~
+  -->
+
+<resources>
+	<color name="colorPrimary">#3949AB</color>
+	<color name="colorPrimaryDark">#1A237E</color>
+	<color name="colorAccent">#FF9800</color>
+	
+	<color name="doc">#1E88E5</color>
+	<color name="docx">#3949AB</color>
+	
+	<color name="xls">#4CAF50</color>
+	<color name="xlsx">#2E7D32</color>
+	
+	<color name="djvu">#673AB7</color>
+	<color name="image">#0DC58B</color>
+	<color name="pdf">#DD0F0F</color>
+	
+	<color name="epub">#A03300</color>
+	<color name="fb2">#FFA000</color>
+	<color name="html">#F4511E</color>
+	<color name="txt">#000000</color>
+	
+	<color name="folder">#E2C44C</color>
+	
+	<color name="other">#5C5C5C</color>
+	
+	<color name="black">#000000</color>
+</resources>

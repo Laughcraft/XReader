@@ -1,0 +1,111 @@
+<!--
+  ~ Copyright (c) 2019.
+  ~ Created by Vladislav Zraevskij
+  ~
+  ~ This file is part of XReader.
+  ~
+  ~     XReader is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU Lesser General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     XReader is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU Lesser General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU Lesser General Public License
+  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
+  ~
+  -->
+
+<resources>
+	<string name="app_name">XReader</string>
+	<string name="search_menu_item_name">Search</string>
+	<string name="sort_by_menu_item">Sort by</string>
+	<string name="folder_name_menu_item">Folder Name</string>
+	<string name="range_seek_bar_name"> File size</string>
+	<string name="sorting_view_title">Sort by</string>
+	
+	<string name="table_of_contents">Table of Contents</string>
+	<string name="table_of_contents_is_null">No Table of Contents</string>
+	<string name="elements">Elements: %1$d</string>
+	<string name="choose_font_size">Choose Font Size</string>
+	<string name="selected_font_size_parameterized">Font Size: %1$d</string>
+	<string name="explorer_title">Explorer</string>
+	
+	<string name="internal_storage">Internal Storage</string>
+	
+	//Dialogs
+	<string name="choose_bookmark">Choose bookmark</string>
+	<string name="add_bookmark">Add bookmark</string>
+	<string name="bookmark">Bookmark</string>
+	<string name="dialog_bookmark_added">Bookmark added!</string>
+	<string name="bookmark_deleted">Bookmark deleted!</string>
+	<string name="bookmark_page_index">Page: %1$d</string>
+	<string name="add_bookmark_button">Add</string>
+	<string name="dismiss">Dismiss</string>
+	<string name="dialog_go_to">Go to page %1$d</string>
+	<string name="dialog_go_to_title">Choose Page</string>
+	<string name="dialog_button_go">Go</string>
+	<string name="confirm_delete_title">Are you sure you want to delete the bookmark?</string>
+	<string name="delete_button">Delete</string>
+	
+	<string name="dialog_sheets_title">Sheets</string>
+	
+	<string name="converter_file_size_warning_title">Warning!</string>
+	<string name="converter_file_size_warning_text">To convert, you need an Internet connection.
+		The size of the transferred file is %1$s.
+		Are you sure you want to start the conversion?</string>
+	
+	<string name="chapter_page">Chapter: %1$d, Page: %2$d. </string>
+	
+	<string name="could_not_open_error_dialog_title">Could not open the file</string>
+	
+	<string name="no_recents">No Recents</string>
+	<string name="no_bookmarks">No Bookmarks</string>
+	
+	//Tabs
+	<string name="tab_name_bookmarks">Bookmarks</string>
+	<string name="tab_name_explorer">File Explorer</string>
+	<string name="tab_name_recent_files">Recent Files</string>
+	
+	//Menus
+	<string name="menu_convert">Convert</string>
+	<string name="menu_text_size">Text size</string>
+	<string name="menu_night_mode">Night mode</string>
+	<string name="menu_add_to_favorites">Add to Favorites</string>
+	<string name="menu_bookmark">Add bookmark</string>
+	<string name="menu_bookmark_added">Bookmark added!</string>
+	<string name="menu_toc">Table of Contents</string>
+	<string name="menu_share">Share</string>
+	<string name="menu_forbid_rotations">Forbid Rotations</string>
+	<string name="menu_allow_rotations">Allow Rotations</string>
+	<string name="menu_intent_send_file_title">Share via…</string>
+	<string name="menu_go_to">Go to…</string>
+	<string name="menu_explorer_search">Search</string>
+	<string name="menu_explorer_sort">Sort</string>
+	<string name="menu_explorer_sort_by_name">By name</string>
+	<string name="menu_explorer_sort_by_date">By date</string>
+	<string name="menu_explorer_sort_by_extension">By extension</string>
+	<string name="menu_explorer_sort_by_size">By size</string>
+	
+	<string-array name="sorting_types">
+		<item>Name</item>
+		<item>Date</item>
+		<item>Extension</item>
+		<item>Size</item>
+	</string-array>
+	
+	//Converter
+	<string name="converter_convert">Convert</string>
+	<string name="converter_uploading">Uploading…</string>
+	<string name="converter_converting">Converting…</string>
+	<string name="converter_downloading">Downloading…</string>
+	<string name="converter_success">Success!</string>
+	<string name="converter_failure">Failure!</string>
+	<string name="converter_internet_is_unavailable">Internet is unavailable</string>
+	<string name="convert_to">Convert To:</string>
+	<string name="convert_to_document_type">Document type:</string>
+	<string name="convert_to_document_extension">Extension:</string>
+</resources>

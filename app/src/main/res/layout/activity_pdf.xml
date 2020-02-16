@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2019.
+  ~ Created by Vladislav Zraevskij
+  ~
+  ~ This file is part of XReader.
+  ~
+  ~     XReader is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU Lesser General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     XReader is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU Lesser General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU Lesser General Public License
+  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
+  ~
+  -->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:tools="http://schemas.android.com/tools">
+	
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/pdf_book_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<com.google.android.material.appbar.CollapsingToolbarLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fitsSystemWindows="false"
+			app:contentScrim="?attr/colorPrimary"
+			app:layout_scrollFlags="scroll|snapMargins"
+			app:toolbarId="@+id/pdf_toolbar">
+			
+			<androidx.appcompat.widget.Toolbar
+				android:id="@+id/pdf_toolbar"
+				app:menu="@menu/menu_pdf_book"
+				android:layout_width="match_parent"
+				android:layout_height="?android:attr/actionBarSize">
+				
+				<HorizontalScrollView
+					android:layout_width="200dp"
+					android:layout_height="?android:actionBarSize">
+					
+					<TextView
+						android:id="@+id/activity_pdf_toolbar_title_textview"
+						android:layout_width="wrap_content"
+						android:layout_height="?android:actionBarSize"
+						android:gravity="start|center_vertical"
+						android:maxLines="1"
+						android:textColor="@android:color/white"
+						android:textSize="22sp"
+						android:visibility="visible" />
+				
+				</HorizontalScrollView>
+			
+			</androidx.appcompat.widget.Toolbar>
+		
+		</com.google.android.material.appbar.CollapsingToolbarLayout>
+	
+	</com.google.android.material.appbar.AppBarLayout>
+	
+	<com.github.barteksc.pdfviewer.PDFView
+		android:id="@+id/pdf_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".ui.activity.PdfActivity">
+	
+	</com.github.barteksc.pdfviewer.PDFView>
+	
+	<ProgressBar
+		android:id="@+id/pdf_progressBar"
+		style="?android:attr/progressBarStyle"
+		android:indeterminate="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_anchor="@+id/pdf_view"
+		app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
