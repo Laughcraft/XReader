@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="images">
+		<item>jpg</item>
+		<item>jpeg</item>
+		<item>png</item>
+		<item>svg</item>
+		<item>psd</item>
+		<item>tiff</item>
+		<item>bmp</item>
+		<item>gif</item>
+		<item>rgb</item>
+		<item>pdb</item>
+		<item>hdr</item>
+		<item>ico</item>
+		<item>webp</item>
+	</string-array>
+	
+	<string-array name="documents">
+		<item>doc</item>
+		<item>docx</item>
+		<item>pdf</item>
+		<item>html</item>
+		<item>odt</item>
+		<item>txt</item>
+		<item>xls</item>
+		<item>xlsx</item>
+		<item>csv</item>
+		<item>rtf</item>
+		<item>docm</item>
+		<item>djvu</item>
+		<item>xps</item>
+		<item>dotx</item>
+		<item>oxps</item>
+	</string-array>
+	
+	<string-array name="books">
+		<item>epub</item>
+		<item>mobi</item>
+		<item>fb2</item>
+		<item>pdb</item>
+		<item>snb</item>
+		<item>tcr</item>
+		<item>lrf</item>
+		<item>rb</item>
+	</string-array>
+	
+	<string-array name="presentation">
+		<item>ppt</item>
+		<item>pptx</item>
+		<item>odp</item>
+		<item>ppsx</item>
+		<item>pot</item>
+		<item>potx</item>
+		<item>ppsm</item>
+		<item>potm</item>
+	</string-array>
+</resources>

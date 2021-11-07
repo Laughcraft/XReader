@@ -1,28 +1,21 @@
--dontobfuscate
--keepattributes InnerClasses
--dontoptimize
--verbose
+# Add project specific ProGuard rules here.
+# You can control the set of applied configuration files using the
+# proguardFiles setting in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
 
--printusage
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
 
--keep class org.apache.poi.** { *; }
--keepclassmembers class org.apache.poi.ss.** { *; }
--keep class org.apache.xmlbeans.** { *; }
--keep class org.apache.codehaus.** { *; }
--keep class org.openxmlformats.** { *; }
--keep class org.w3c.dom.** { *; }
--keep class org.dom4j.** { *; }
--keep class javax.** { *; }
+# Uncomment this to preserve the line number information for
+# debugging stack traces.
+#-keepattributes SourceFile,LineNumberTable
 
--keep class schemaorg_apache_xmlbeans.system.sF1327CCA741569E70F9CA8C9AF9B44B2.TypeSystemHolder { public final static *** typeSystem; }
--keep class schemaorg_apache_xmlbeans.** { *; }
--keep class schemasMicrosoftComOfficeExcel.** { *; }
--keep class schemasMicrosoftComOfficeOffice.** { *; }
--keep class schemasMicrosoftComOfficeWord.** { *; }
--keep class aavax.xml.** { *; }
-
--keep class repackage.** { *; }
-
--keep class com.fasterxml.aalto.stax.InputFactoryImpl
--keep class com.fasterxml.aalto.stax.OutputFactoryImpl
--keep class com.fasterxml.aalto.stax.EventFactoryImpl
+# If you keep the line number information, uncomment this to
+# hide the original source file name.
+#-renamesourcefileattribute SourceFile

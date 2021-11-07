@@ -1,26 +1,20 @@
-<!--
-  ~ Copyright (c) 2019.
-  ~ Created by Vladislav Zraevskij
-  ~
-  ~ This file is part of XReader.
-  ~
-  ~     XReader is free software: you can redistribute it and/or modify
-  ~     it under the terms of the GNU Lesser General Public License as published by
-  ~     the Free Software Foundation, either version 3 of the License, or
-  ~     (at your option) any later version.
-  ~
-  ~     XReader is distributed in the hope that it will be useful,
-  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~     GNU Lesser General Public License for more details.
-  ~
-  ~     You should have received a copy of the GNU Lesser General Public License
-  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
-  ~
-  -->
+<?xml version="1.0" encoding="utf-8"?>
 
 <resources>
 	<string name="app_name">XReader</string>
+	<string name="images">Images</string>
+	<string name="video">Video</string>
+	<string name="audio">Audio</string>
+	<string name="documents">Documents</string>
+	<string name="presentations">Presentations</string>
+	<string name="favorites">Bookmarks</string>
+	<string name="recents">Recents</string>
+	<string name="downloads">Downloads</string>
+	<string name="storage">Internal Storage</string>
+	<string name="sdcard">SD Card</string>
+	<string name="sdcards">SD Cards</string>
+	<string name="others">others</string>
+	
 	<string name="search_menu_item_name">Search</string>
 	<string name="sort_by_menu_item">Sort by</string>
 	<string name="folder_name_menu_item">Folder Name</string>
@@ -97,7 +91,6 @@
 		<item>Size</item>
 	</string-array>
 	
-	//Converter
 	<string name="converter_convert">Convert</string>
 	<string name="converter_uploading">Uploading…</string>
 	<string name="converter_converting">Converting…</string>
@@ -108,4 +101,36 @@
 	<string name="convert_to">Convert To:</string>
 	<string name="convert_to_document_type">Document type:</string>
 	<string name="convert_to_document_extension">Extension:</string>
+	
+	<string name="all">All</string>
+	<string name="new_files">New files</string>
+	<string name="archives">Archives</string>
+	<string name="books">Books</string>
+	
+	<string name="tb">Tb</string>
+	<string name="gb">Gb</string>
+	<string name="mb">Mb</string>
+	<string name="kb">Kb</string>
+	<string name="choose">Choose</string>
+	<string name="rename">Rename</string>
+	<string name="save">Save</string>
+	<string name="chapter">Chapter</string>
+	<string name="page">Page</string>
+	<string name="go">Go</string>
+	<string name="permission_rationale">The app needs permission to access internal storage</string>
+	<string name="ask_permission">Ask permission</string>
+	<string name="attention">Attention</string>
+	<string name="choose_app">Choose an application to open with:</string>
+	<string name="conversion_not_completed">Conversion not completed</string>
+	<string name="internet_required">Internet connection is necessary for the conversion</string>
+	<string name="conversion_stage_started">Preparing…</string>
+	<string name="conversion_stage_uploading">Uploading file…</string>
+	<string name="conversion_stage_uploaded">Successfully uploaded</string>
+	<string name="conversion_stage_converting">Converting</string>
+	<string name="conversion_stage_converted">Converted</string>
+	<string name="conversion_stage_downloading">Downloading…</string>
+	<string name="conversion_stage_ready">Success!</string>
+	<string name="privacy_policy">Privacy Policy</string>
+	<string name="new_name">New name</string>
+	<string name="open_converted_file">Open converted file</string>
 </resources>

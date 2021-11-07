@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/clBookMenu"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/transparent">
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fabConvert"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/transform" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fabBookmark"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		app:layout_constraintBottom_toTopOf="@+id/fabConvert"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/ic_bookmark" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fabNavigate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		app:layout_constraintBottom_toTopOf="@+id/fabBookmark"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/ic_import_contacts_black_24dp" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fabNight"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		android:src="@drawable/ic_dark_mode_black_24dp"
+		app:layout_constraintBottom_toTopOf="@+id/fabNavigate"
+		app:layout_constraintEnd_toEndOf="parent" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fabShare"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		app:layout_constraintBottom_toTopOf="@+id/fabNight"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/ic_share_24px" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fabRename"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		app:layout_constraintBottom_toTopOf="@+id/fabShare"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/ic_edit_black_24dp" />
+	
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fabOptions"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		app:layout_constraintBottom_toTopOf="@+id/fabRename"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/ic_settings_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

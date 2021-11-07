@@ -21,12 +21,13 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/llDjvu"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="horizontal">
 	
 	<com.github.chrisbanes.photoview.PhotoView
-		android:id="@+id/image_book_page_photo_view"
+		android:id="@+id/pvDjvu"
 		android:layout_width="0dp"
 		android:layout_height="match_parent"
 		android:layout_weight="1"
@@ -36,7 +37,7 @@
 	</com.github.chrisbanes.photoview.PhotoView>
 	
 	<com.github.chrisbanes.photoview.PhotoView
-		android:id="@+id/image_book_page_photo_view2"
+		android:id="@+id/pvDjvu2"
 		android:layout_height="match_parent"
 		android:layout_width="0dp"
 		android:layout_weight="1"

@@ -1,26 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2019.
-  ~ Created by Vladislav Zraevskij
-  ~
-  ~ This file is part of XReader.
-  ~
-  ~     XReader is free software: you can redistribute it and/or modify
-  ~     it under the terms of the GNU Lesser General Public License as published by
-  ~     the Free Software Foundation, either version 3 of the License, or
-  ~     (at your option) any later version.
-  ~
-  ~     XReader is distributed in the hope that it will be useful,
-  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~     GNU Lesser General Public License for more details.
-  ~
-  ~     You should have received a copy of the GNU Lesser General Public License
-  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
-  ~
-  -->
+<?xml version="1.0" encoding="utf-8"?>
 
 <resources>
 	<string name="app_name">XReader</string>
+	<string name="images">Картинки</string>
+	<string name="video">Видео</string>
+	<string name="audio">Аудио</string>
+	<string name="documents">Документы</string>
+	<string name="favorites">Закладки</string>
+	<string name="recents">Недавние</string>
+	<string name="downloads">Загрузки</string>
+	<string name="storage">Внутреннее хранилище</string>
+	<string name="sdcard">Карта памяти</string>
+	<string name="sdcards">Карты памяти</string>
+	<string name="others">Другое</string>
+	
 	<string name="add_bookmark_button">Добавить</string>
 	<string name="add_bookmark">Добавить закладку</string>
 	<string name="menu_bookmark_added">Закладка добавлена!</string>
@@ -86,4 +79,35 @@
 	<string name="convert_to">Конвертировать в:</string>
 	<string name="convert_to_document_type">Тип документа</string>
 	<string name="convert_to_document_extension">Расширение:</string>
+	<string name="all">Все</string>
+	<string name="archives">Архивы</string>
+	<string name="books">Книги</string>
+	<string name="new_files">Новые файлы</string>
+	<string name="tb">Тб</string>
+	<string name="gb">Гб</string>
+	<string name="mb">Мб</string>
+	<string name="kb">Кб</string>
+	<string name="rename">Переименовать</string>
+	<string name="save">Сохранить</string>
+	<string name="choose_app">Выберите приложение:</string>
+	<string name="presentations">Презентации</string>
+	<string name="chapter">Глава</string>
+	<string name="page">Страница</string>
+	<string name="go">Перейти</string>
+	<string name="attention">Внимание</string>
+	<string name="ask_permission">Запросить разрешение</string>
+	<string name="permission_rationale">Приложению необходимо разрешение на доступ к внутреннему хранилищу</string>
+	<string name="choose">Выбрать</string>
+	<string name="conversion_not_completed">Конверсия не завершена</string>
+	<string name="internet_required">Для преобразования необходимо интернет соединение</string>
+	<string name="conversion_stage_started">Подготовка…</string>
+	<string name="conversion_stage_uploading">Отправка файла…</string>
+	<string name="conversion_stage_uploaded">Успешно отправлено</string>
+	<string name="conversion_stage_converting">Преобразование…</string>
+	<string name="conversion_stage_converted">Преобразовано</string>
+	<string name="conversion_stage_downloading">Загрузка…</string>
+	<string name="conversion_stage_ready">Успешно!</string>
+	<string name="privacy_policy">Политика конфиденциальности</string>
+	<string name="new_name">Новое имя</string>
+	<string name="open_converted_file">Открыть конвертированный файл</string>
 </resources>

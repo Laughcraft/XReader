@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/clScroll"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="16dp">
+	
+	<SeekBar
+		android:id="@+id/sbChapter"
+		style="@style/Widget.AppCompat.SeekBar.Discrete"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:max="10"
+		android:progress="3"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/tvChapterTitle"
+		app:layout_constraintTop_toBottomOf="@+id/tvChapterTitle" />
+	
+	<SeekBar
+		android:id="@+id/sbPage"
+		style="@style/Widget.AppCompat.SeekBar.Discrete"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:max="10"
+		android:progress="3"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/tvChapterTitle"
+		app:layout_constraintTop_toBottomOf="@+id/tvPageTitle" />
+	
+	<TextView
+		android:id="@+id/tvChapterTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/chapter"
+		android:textSize="18sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<TextView
+		android:id="@+id/tvPageTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/page"
+		android:textSize="18sp"
+		app:layout_constraintStart_toStartOf="@+id/tvChapterTitle"
+		app:layout_constraintTop_toBottomOf="@+id/sbChapter" />
+	
+	<TextView
+		android:id="@+id/tvChapter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:textSize="18sp"
+		app:layout_constraintBottom_toBottomOf="@+id/tvChapterTitle"
+		app:layout_constraintStart_toEndOf="@+id/tvChapterTitle"
+		app:layout_constraintTop_toTopOf="@+id/tvChapterTitle"
+		tools:text="24" />
+	
+	<TextView
+		android:id="@+id/tvPage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:textSize="18sp"
+		app:layout_constraintBottom_toBottomOf="@+id/tvPageTitle"
+		app:layout_constraintStart_toEndOf="@+id/tvPageTitle"
+		app:layout_constraintTop_toTopOf="@+id/tvPageTitle"
+		tools:text="12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

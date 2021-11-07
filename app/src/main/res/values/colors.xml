@@ -1,25 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2019.
-  ~ Created by Vladislav Zraevskij
-  ~
-  ~ This file is part of XReader.
-  ~
-  ~     XReader is free software: you can redistribute it and/or modify
-  ~     it under the terms of the GNU Lesser General Public License as published by
-  ~     the Free Software Foundation, either version 3 of the License, or
-  ~     (at your option) any later version.
-  ~
-  ~     XReader is distributed in the hope that it will be useful,
-  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~     GNU Lesser General Public License for more details.
-  ~
-  ~     You should have received a copy of the GNU Lesser General Public License
-  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
-  ~
-  -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<color name="purple_200">#FFBB86FC</color>
+	<color name="purple_500">#FF6200EE</color>
+	<color name="purple_700">#FF3700B3</color>
+	<color name="teal_200">#FF03DAC5</color>
+	<color name="teal_700">#FF018786</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	
+	<color name="documents">#304FFE</color>
+	<color name="images">#64DD17</color>
+	<color name="video">#D50000</color>
+	<color name="audio">#FF6D00</color>
+	<color name="books">#EEFF41</color>
+	<color name="archive">#AA00FF</color>
+	<color name="downloads">#00C853</color>
+	<color name="all_files">#00B8D4</color>
+	<color name="colorOverlay">#78ffffff</color>
+	<color name="others">#6200EA</color>
+	
 	<color name="colorPrimary">#3949AB</color>
 	<color name="colorPrimaryDark">#1A237E</color>
 	<color name="colorAccent">#FF9800</color>
@@ -42,6 +41,8 @@
 	<color name="folder">#E2C44C</color>
 	
 	<color name="other">#5C5C5C</color>
-	
-	<color name="black">#000000</color>
+	<color name="accent">#651FFF</color>
+	<color name="gray_text">#757575</color>
+	<color name="gray_shadow">#667A7A7A</color>
+	<color name="selected_file_tint">#B2757575</color>
 </resources>

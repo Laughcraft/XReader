@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/firstFragment">
+	
+	<fragment
+		android:id="@+id/mainFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.MainFragment"
+		android:label="MainFragment" >
+		<action
+			android:id="@+id/actionOpenDirectory"
+			app:destination="@id/fileListFragment" />
+		<action
+			android:id="@+id/action_mainFragment_to_djvuFragment"
+			app:destination="@id/djvuFragment" />
+		<action
+			android:id="@+id/action_mainFragment_to_pdfFragment"
+			app:destination="@id/pdfFragment" />
+		<action
+			android:id="@+id/action_mainFragment_to_imageFragment"
+			app:destination="@id/imageFragment" />
+		<action
+			android:id="@+id/action_mainFragment_to_textFragment"
+			app:destination="@id/textFragment" />
+		<action
+			android:id="@+id/action_mainFragment_to_tableFragment"
+			app:destination="@id/tableFragment" />
+		<action
+			android:id="@+id/action_mainFragment_to_converterFragment"
+			app:destination="@id/converterFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/fileListFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.FileListFragment"
+		android:label="FileListFragment" >
+		<argument
+			android:name="listType"
+			app:argType="integer" />
+		<action
+			android:id="@+id/action_fileListFragment_to_imageFragment"
+			app:destination="@id/imageFragment" />
+		<action
+			android:id="@+id/action_fileListFragment_to_djvuFragment"
+			app:destination="@id/djvuFragment" />
+		<action
+			android:id="@+id/action_fileListFragment_to_pdfFragment"
+			app:destination="@id/pdfFragment" />
+		<action
+			android:id="@+id/action_fileListFragment_to_tableFragment"
+			app:destination="@id/tableFragment" />
+		<action
+			android:id="@+id/action_fileListFragment_to_textFragment"
+			app:destination="@id/textFragment" />
+		<action
+			android:id="@+id/action_fileListFragment_to_converterFragment"
+			app:destination="@id/converterFragment" />
+	</fragment>
+	<fragment
+		android:id="@+id/djvuFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.DjvuFragment"
+		android:label="DjvuFragment" >
+		<argument
+			android:name="filepath"
+			app:argType="string" />
+		<action
+			android:id="@+id/action_djvuFragment_to_converterFragment"
+			app:destination="@id/converterFragment" />
+		<argument
+			android:name="page"
+			app:argType="integer" />
+	</fragment>
+	<fragment
+		android:id="@+id/imageFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.ImageFragment"
+		android:label="ImageFragment">
+		<argument
+			android:name="filepath"
+			app:argType="string" />
+		<action
+			android:id="@+id/action_imageFragment_to_converterFragment"
+			app:destination="@id/converterFragment" />
+		<argument
+			android:name="page"
+			app:argType="integer" />
+	
+	</fragment>
+	<fragment
+		android:id="@+id/pdfFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.PdfFragment"
+		android:label="PdfFragment">
+		
+		<argument
+			android:name="filepath"
+			app:argType="string" />
+		<action
+			android:id="@+id/action_pdfFragment_to_converterFragment"
+			app:destination="@id/converterFragment" />
+		<argument
+			android:name="page"
+			app:argType="integer" />
+	
+	</fragment>
+	<fragment
+		android:id="@+id/tableFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.TableFragment"
+		android:label="TableFragment">
+		
+		<argument
+			android:name="filepath"
+			app:argType="string" />
+		<action
+			android:id="@+id/action_tableFragment_to_converterFragment"
+			app:destination="@id/converterFragment" />
+		<argument
+			android:name="page"
+			app:argType="integer" />
+	
+	</fragment>
+	<fragment
+		android:id="@+id/textFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.TextFragment"
+		android:label="TextFragment">
+		
+		<argument
+			android:name="filepath"
+			app:argType="string" />
+		<action
+			android:id="@+id/action_textFragment_to_converterFragment"
+			app:destination="@id/converterFragment" />
+		<argument
+			android:name="page"
+			app:argType="integer" />
+		<argument
+			android:name="chapter"
+			app:argType="integer" />
+	
+	</fragment>
+	<fragment
+		android:id="@+id/converterFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.ConverterFragment"
+		android:label="ConverterFragment">
+		
+		<argument
+			android:name="filepath"
+			app:argType="string" />
+		<action
+			android:id="@+id/action_converterFragment_to_tableFragment"
+			app:destination="@id/tableFragment" />
+		<action
+			android:id="@+id/action_converterFragment_to_textFragment"
+			app:destination="@id/textFragment" />
+		<action
+			android:id="@+id/action_converterFragment_to_pdfFragment"
+			app:destination="@id/pdfFragment" />
+		<action
+			android:id="@+id/action_converterFragment_to_imageFragment"
+			app:destination="@id/imageFragment" />
+		<action
+			android:id="@+id/action_converterFragment_to_djvuFragment"
+			app:destination="@id/djvuFragment" />
+	
+	</fragment>
+	<fragment
+		android:id="@+id/firstFragment"
+		android:name="com.laughcraft.android.myreader.ui.fragment.FirstFragment"
+		android:label="FirstFragment" >
+		<action
+			android:id="@+id/action_firstFragment_to_mainFragment"
+			app:destination="@id/mainFragment" />
+	</fragment>
+</navigation>

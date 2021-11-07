@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/clHome"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/bnvMain"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_marginStart="18dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="18dp"
+		android:layout_marginBottom="16dp"
+		android:background="@drawable/rounded_square"
+		android:visibility="gone"
+		app:itemRippleColor="@android:color/transparent"
+		app:labelVisibilityMode="auto"
+		app:layout_constraintBottom_toTopOf="@+id/cvStorage"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:menu="@menu/bnv_home" />
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvStorage"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:minHeight="100dp"
+		app:cardBackgroundColor="@color/accent"
+		app:cardCornerRadius="32dp"
+		app:cardElevation="8dp"
+		app:cardMaxElevation="8dp"
+		app:layout_constraintBottom_toTopOf="@+id/flow"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/bnvMain">
+		
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			
+			<TextView
+				android:id="@+id/tvStorageTitle"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="18dp"
+				android:layout_marginTop="12dp"
+				android:text="@string/storage"
+				android:textColor="@color/white"
+				android:textSize="20sp"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+			
+			<com.github.mikephil.charting.charts.PieChart
+				android:id="@+id/pcStorage"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_marginStart="64dp"
+				android:layout_marginTop="4dp"
+				android:layout_marginEnd="64dp"
+				android:foregroundGravity="right"
+				android:visibility="gone"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/tvStorageTitle"
+				tools:visibility="visible" />
+			
+			<ProgressBar
+				android:id="@+id/pbStorage"
+				style="?android:attr/progressBarStyle"
+				android:layout_width="120dp"
+				android:layout_height="120dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/tvStorageTitle" />
+		
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvDocuments"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:backgroundTint="@color/documents"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		tools:layout_editor_absoluteX="25dp"
+		tools:layout_editor_absoluteY="298dp">
+		
+		<ImageView
+			android:id="@+id/ivDoc"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			app:srcCompat="@drawable/ic_documents" />
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvImages"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:layout_marginStart="24dp"
+		android:backgroundTint="@color/images"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		app:layout_constraintStart_toEndOf="@+id/cvDocuments"
+		tools:layout_editor_absoluteY="298dp">
+		
+		<ImageView
+			android:id="@+id/ivImages"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			app:srcCompat="@drawable/ic_images" />
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvAudio"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:layout_marginStart="16dp"
+		android:backgroundTint="@color/audio"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		app:layout_constraintStart_toEndOf="@+id/cvImages"
+		tools:layout_editor_absoluteY="298dp">
+		
+		<ImageView
+			android:id="@+id/ivAudio"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			app:srcCompat="@drawable/ic_audio" />
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvVideo"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:layout_marginStart="32dp"
+		android:backgroundTint="@color/video"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		app:layout_constraintStart_toEndOf="@+id/cvAudio"
+		tools:layout_editor_absoluteY="298dp">
+		
+		<ImageView
+			android:id="@+id/ivVideo"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			app:srcCompat="@drawable/ic_video" />
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvBooks"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:backgroundTint="@color/books"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		tools:layout_editor_absoluteX="34dp"
+		tools:layout_editor_absoluteY="416dp">
+		
+		<ImageView
+			android:id="@+id/ivBooks"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			app:srcCompat="@drawable/ic_books" />
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvArchives"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:backgroundTint="@color/archive"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		tools:layout_editor_absoluteX="125dp"
+		tools:layout_editor_absoluteY="416dp">
+		
+		<ImageView
+			android:id="@+id/ivArchives"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			app:srcCompat="@drawable/ic_archives" />
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvDlds"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:backgroundTint="@color/downloads"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		tools:layout_editor_absoluteX="215dp"
+		tools:layout_editor_absoluteY="416dp">
+		
+		<ImageView
+			android:id="@+id/ivDlds"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			app:srcCompat="@drawable/ic_downloads" />
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvAll"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:backgroundTint="@color/all_files"
+		app:cardCornerRadius="16dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		tools:layout_editor_absoluteX="315dp"
+		tools:layout_editor_absoluteY="416dp">
+		
+		<ImageView
+			android:id="@+id/ivAll"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="12dp"
+			app:srcCompat="@drawable/ic_all" />
+	
+	</androidx.cardview.widget.CardView>
+	
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvNew"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="40dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="8dp"
+		android:minHeight="100dp"
+		app:cardCornerRadius="32dp"
+		app:cardElevation="4dp"
+		app:cardMaxElevation="4dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/flow">
+		
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/clNew"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingBottom="8dp">
+			
+			<TextView
+				android:id="@+id/tvNewFiles"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="18dp"
+				android:layout_marginTop="12dp"
+				android:text="@string/new_files"
+				android:textSize="20sp"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+			
+			<ImageView
+				android:id="@+id/ivNew1"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/ic_file_outline"
+				tools:layout_editor_absoluteX="18dp" />
+			
+			<ImageView
+				android:id="@+id/ivNew2"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/ic_file_outline"
+				tools:layout_editor_absoluteX="109dp" />
+			
+			<ImageView
+				android:id="@+id/ivNew3"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/ic_file_outline"
+				tools:layout_editor_absoluteX="199dp" />
+			
+			<ImageView
+				android:id="@+id/ivNew4"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:layout_marginEnd="16dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/ic_file_outline" />
+			
+			<TextView
+				android:id="@+id/tvNew1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:lines="1"
+				android:maxLines="1"
+				android:textSize="14sp"
+				app:layout_constraintEnd_toEndOf="@+id/ivNew1"
+				app:layout_constraintStart_toStartOf="@+id/ivNew1"
+				app:layout_constraintTop_toBottomOf="@+id/ivNew1"
+				tools:text="Filename.txt" />
+			
+			<TextView
+				android:id="@+id/tvNew2"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:lines="1"
+				android:maxLines="1"
+				android:textSize="14sp"
+				app:layout_constraintEnd_toEndOf="@+id/ivNew2"
+				app:layout_constraintStart_toStartOf="@+id/ivNew2"
+				app:layout_constraintTop_toBottomOf="@+id/ivNew2"
+				tools:text="Filename.txt" />
+			
+			<TextView
+				android:id="@+id/tvNew3"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:lines="1"
+				android:maxLines="1"
+				android:textSize="14sp"
+				app:layout_constraintEnd_toEndOf="@+id/ivNew3"
+				app:layout_constraintStart_toStartOf="@+id/ivNew3"
+				app:layout_constraintTop_toBottomOf="@+id/ivNew3"
+				tools:text="Filename.txt" />
+			
+			<TextView
+				android:id="@+id/tvNew4"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:lines="1"
+				android:maxLines="1"
+				android:textSize="14sp"
+				app:layout_constraintEnd_toEndOf="@+id/ivNew4"
+				app:layout_constraintStart_toStartOf="@+id/ivNew4"
+				app:layout_constraintTop_toBottomOf="@+id/ivNew4"
+				tools:text="Filename.txt" />
+			
+			<androidx.constraintlayout.helper.widget.Flow
+				android:id="@+id/flowNewFiles"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="32dp"
+				android:visibility="invisible"
+				app:constraint_referenced_ids="ivNew1,ivNew2,ivNew3,ivNew4"
+				app:flow_horizontalStyle="spread"
+				app:flow_maxElementsWrap="4"
+				app:flow_wrapMode="aligned"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/tvNewFiles" >
+				
+			</androidx.constraintlayout.helper.widget.Flow>
+			
+			<ProgressBar
+				android:id="@+id/pbNewFiles"
+				style="?android:attr/progressBarStyle"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:layout_marginTop="16dp"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+		
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+	
+	<TextView
+		android:id="@+id/tvDocs"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/documents"
+		app:layout_constraintEnd_toEndOf="@+id/cvDocuments"
+		app:layout_constraintStart_toStartOf="@+id/cvDocuments"
+		app:layout_constraintTop_toBottomOf="@+id/cvDocuments" />
+	
+	<TextView
+		android:id="@+id/tvImages"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/images"
+		app:layout_constraintEnd_toEndOf="@+id/cvImages"
+		app:layout_constraintStart_toStartOf="@+id/cvImages"
+		app:layout_constraintTop_toBottomOf="@+id/cvImages" />
+	
+	<TextView
+		android:id="@+id/tvAudio"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/audio"
+		app:layout_constraintEnd_toEndOf="@+id/cvAudio"
+		app:layout_constraintStart_toStartOf="@+id/cvAudio"
+		app:layout_constraintTop_toBottomOf="@+id/cvAudio" />
+	
+	<TextView
+		android:id="@+id/tvVideo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/video"
+		app:layout_constraintEnd_toEndOf="@+id/cvVideo"
+		app:layout_constraintStart_toStartOf="@+id/cvVideo"
+		app:layout_constraintTop_toBottomOf="@+id/cvVideo" />
+	
+	<TextView
+		android:id="@+id/tvAll"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="1dp"
+		android:text="@string/all"
+		app:layout_constraintEnd_toEndOf="@+id/cvAll"
+		app:layout_constraintStart_toStartOf="@+id/cvAll"
+		app:layout_constraintTop_toBottomOf="@+id/cvAll" />
+	
+	<TextView
+		android:id="@+id/tvDlds"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/downloads"
+		app:layout_constraintEnd_toEndOf="@+id/cvDlds"
+		app:layout_constraintStart_toEndOf="@+id/cvDlds"
+		app:layout_constraintStart_toStartOf="@+id/cvDlds"
+		app:layout_constraintTop_toBottomOf="@+id/cvDlds" />
+	
+	<TextView
+		android:id="@+id/tvArchives"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/archives"
+		app:layout_constraintEnd_toEndOf="@+id/cvArchives"
+		app:layout_constraintStart_toStartOf="@+id/cvArchives"
+		app:layout_constraintTop_toBottomOf="@+id/cvArchives" />
+	
+	<TextView
+		android:id="@+id/tvBooks"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/books"
+		app:layout_constraintEnd_toEndOf="@+id/cvBooks"
+		app:layout_constraintStart_toStartOf="@+id/cvBooks"
+		app:layout_constraintTop_toBottomOf="@+id/cvBooks" />
+	
+	<androidx.constraintlayout.helper.widget.Flow
+		android:id="@+id/flow"
+		android:layout_width="0dp"
+		android:layout_height="180dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="8dp"
+		app:constraint_referenced_ids="cvDocuments,cvImages,cvAudio,cvVideo,cvBooks,cvArchives,cvDlds,cvAll"
+		app:flow_maxElementsWrap="4"
+		app:flow_verticalStyle="spread_inside"
+		app:flow_wrapMode="aligned"
+		app:layout_constraintBottom_toTopOf="@+id/cvNew"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/cvStorage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

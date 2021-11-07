@@ -1,44 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2019.
-  ~ Created by Vladislav Zraevskij
-  ~
-  ~ This file is part of XReader.
-  ~
-  ~     XReader is free software: you can redistribute it and/or modify
-  ~     it under the terms of the GNU Lesser General Public License as published by
-  ~     the Free Software Foundation, either version 3 of the License, or
-  ~     (at your option) any later version.
-  ~
-  ~     XReader is distributed in the hope that it will be useful,
-  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~     GNU Lesser General Public License for more details.
-  ~
-  ~     You should have received a copy of the GNU Lesser General Public License
-  ~     along with XReader.  If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.
-  ~
-  -->
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.fragment.app.FragmentContainerView
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
+	
+	android:id="@+id/nav_host_fragment"
+	android:name="androidx.navigation.fragment.NavHostFragment"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical">
-	
-	<androidx.viewpager.widget.ViewPager
-		android:id="@+id/view_pager_main"
-		android:layout_width="match_parent"
-		android:layout_height="0dp"
-		android:layout_weight="1" />
-	
-	<com.google.android.material.bottomnavigation.BottomNavigationView
-		android:id="@+id/bottom_navigation_view_main_activity"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		app:labelVisibilityMode="auto"
-		app:menu="@menu/menu_bottom_navigation"
-		app:itemBackground="@color/colorPrimary"
-		app:itemIconTint="@color/main_tabs_color"
-		app:itemTextColor="@color/main_tabs_color"></com.google.android.material.bottomnavigation.BottomNavigationView>
-
-</LinearLayout>
+	app:defaultNavHost="true"
+	app:navGraph="@navigation/nav_graph"/>

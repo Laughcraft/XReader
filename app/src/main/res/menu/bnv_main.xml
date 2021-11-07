@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/tab_recents"
+		android:icon="@drawable/baseline_restore_24"
+		android:title="@string/tab_name_recent_files" />
+	<item
+		android:id="@+id/tab_explorer"
+		android:icon="@drawable/baseline_folder_open_24"
+		android:title="@string/tab_name_explorer" />
+	<item
+		android:id="@+id/tab_favorites"
+		android:icon="@drawable/ic_bookmark_border_24px"
+		android:title="@string/tab_name_bookmarks" />
+</menu>
